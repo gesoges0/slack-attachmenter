@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html>  
+    <head>
+        <style>  
+            body{  
+                min-width:400px;
+                /* height:350px;   */
+                font-family: "Lucida Grande", Helvetica, Arial, sans-serif;  
+                padding:10px;
+                margin-bottom: 50px;
+            }
+            p {
+                line-height: 0.2;
+            }
+        </style>  
+        <script src="jquery-3.6.0.min.js"></script>
+    </head>  
+    <body>
+        <p>
+            <button id="postBtn">Post</button>
+        </p>
+        <form>
+            <p>message</p>
+            <p><textarea id="messageTextForm" rows="2" cols="50" value=""></textarea></p>
+            <button id="setMessageBtn">set</button>
+        </form>
+        <hr>
+        <div id="output_1" >
+            <div id="attachment_1">
+                <form id="attachment">
+                    <p>[title]</p>
+                    <p><input id="attachmentTitleForm_1" type="text" value=""></p>
+                    <p>[text]</p>
+                    <p><textarea id="attachmentTextForm_1" rows="2" cols="50" wrap="hard" value=""></textarea></p>
+                    <p>[image_url]</p>
+                    <p><input id="attachmentUrlForm_1" value=""></p>
+                
+                    <select id="colorSelectionForm_1">
+                        <option value="good" style="background-color:green">good</option>
+                        <option value="warning" style="background-color:yellow">warning</option>
+                        <option value="danger" style="background-color:red">danger</option>
+                    </select>
+                    <button id="setBtn_1">set</button>
+                    <button id="clearBtn_1">clear</button>
+                </form>
+            </div>
+        </div>
+        <div id="output_2" ></div>
+        <div id="output_3" ></div>
+        <div id="output_4" ></div>
+        <div id="output_5" ></div>
+
+
+        <hr>
+        <h3>Setting</h3>
+        <p id="slackToken">[token] NULL</p>
+        <input id="slackTokenForm" type="text"><input id="slackTokenBtn" type="submit" value="set">
+        
+        <p id="channel">[channel] NULL</p>
+        <input id="channelForm" type="text"><input id="channelBtn" type="submit" value="set">
+        <p id="threadTs">[thread_ts] NULL</p>
+        <input id="threadTsForm" type="text"><input id="threadTsBtn" type="submit" value="set">
+        <p id="iconEmoji">[icon_emoji] NULL</p>
+        <input id="iconEmojiForm" type="text"><input id="iconEmojiBtn" type="submit" value="set">
+        <p id="userName">[icon_emoji] NULL</p>
+        <input id="userNameForm" type="text"><input id="userNameBtn" type="submit" value="set">
+        
+        <script src="popup.js"></script>
+    </body>  
+</html>  
